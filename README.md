@@ -7,16 +7,16 @@ This example provides a foundational understanding of how neural networks learn 
 
 ### Theory
 This single-layer neural network is a basic form of an artificial neural network designed for binary classification. The main components and concepts are as follows:
-**1.Sigmoid Activation Function:** The sigmoid function maps any input into a range between 0 and 1, making it useful for binary classification. It is defined as:
+**1. Sigmoid Activation Function:** The sigmoid function maps any input into a range between 0 and 1, making it useful for binary classification. It is defined as:
                                   **σ(x)= 1/1+e^(−x)** 
 Its derivative is used during backpropagation to update weights, allowing the model to learn from errors.
-**2.Data and Labels:**
+**2. Data and Labels:**
 - Input data (X): Each row represents a data sample with binary feature values.
 - Target labels (y): The expected outputs for each input sample, which are binary values in this case.
-**3.Weight Initialization:** Weights are initialized with small random values to break symmetry and provide a starting point for learning. The weights determine how input data is transformed through the network.
-**4.Forward Propagation:** The input data is multiplied by the weights and passed through the sigmoid function to produce predictions. This step is essential in calculating the output for each sample based on current weights.
-**5.Error Calculation:** The difference between the predicted and actual outputs is computed as the error. This error guides how the weights are adjusted during backpropagation.
-**6.Backpropagation and Weight Update:** The error is used to calculate how much each weight needs to change. The network calculates adjustments by multiplying the error with the derivative of the sigmoid function, which helps minimize the error over many iterations.
+**3. Weight Initialization:** Weights are initialized with small random values to break symmetry and provide a starting point for learning. The weights determine how input data is transformed through the network.
+**4. Forward Propagation:** The input data is multiplied by the weights and passed through the sigmoid function to produce predictions. This step is essential in calculating the output for each sample based on current weights.
+**5. Error Calculation:** The difference between the predicted and actual outputs is computed as the error. This error guides how the weights are adjusted during backpropagation.
+**6. Backpropagation and Weight Update:** The error is used to calculate how much each weight needs to change. The network calculates adjustments by multiplying the error with the derivative of the sigmoid function, which helps minimize the error over many iterations.
 
 ## Code Explanation
 _import numpy as np_
